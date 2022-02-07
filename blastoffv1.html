@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!--
+    This is a file to test the use of HTML tags as well as a couple JavaScript functions (document.write() and alert()).
+    created by Alex Caraway
+    01/12/21
+    for CSC102
+    alecaraw@uat.edu
+-->
+
+<head>
+    <!--This is the head of the document, it is behind the scenes-->
+    <script src="code.js"></script>
+    <title>
+        Alex Caraway's UATSpace Page
+    </title>
+    <style>
+        body {
+            background-color: royalblue
+        }
+    </style>
+</head>
+
+<body>
+    <img src="UATspaceLogo.jpg">
+    <h1>UAT Space Program</h1>
+
+    <script>
+        document.write("Test of the document.write function");
+        //this function prints text on the body of the webpage
+
+        /*var alertTest = "This is a test of the alert function. It is stored in a variable."
+        alert(alertTest);*/
+
+        /*The alert function
+        opens an alert window
+        inside the browser*/
+
+        /*but we comment it
+        out so it does not pop up
+        it is annoying*/
+    </script>
+
+    <p>
+        test of the paragraph tags hee hoo funny words funny not being cut off by the window being small
+    </p>
+    <br>
+    <div id="blastOffText">this is where blastOff notifications appear</div>
+    <br>
+    <button onclick="blastOffTimer();">Start</button>
+    <button>stop</button>
+    <br>
+    <script>
+        var docText = "this is the contents of my docText variable.";
+        var addText = " did you know 4 bits is a nybble?";
+        document.write(docText + addText)
+    </script>
+    <br>
+    <br>
+    <button onclick="playCraps();">Play Craps</button>
+    <div id="crapsRes">Craps Results</div>
+    <div id="die1Res">die 1 result</div>
+    <div id="die2Res">die 2 result</div>
+    <div id="sumRes">sum result</div>
+    <br>
+    
+</body>
+<!--alt+shift+f to fix formatting-->
+
+</html>
